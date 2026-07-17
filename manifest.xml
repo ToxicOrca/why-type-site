@@ -13,7 +13,7 @@
   <Description DefaultValue="Create, organize, and search reusable email templates, then insert them into your message with one click or a keyword."/>
   <IconUrl DefaultValue="https://toxicorca.github.io/why-type-site/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://toxicorca.github.io/why-type-site/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://toxicorca.github.io/why-type-site/"/>
+  <SupportUrl DefaultValue="https://toxicorca.github.io/why-type-site/support.html"/>
 
   <AppDomains>
     <AppDomain>https://toxicorca.github.io/why-type-site</AppDomain>
