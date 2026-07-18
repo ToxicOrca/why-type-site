@@ -7,7 +7,7 @@
 
   <Id>aee9b733-bda2-4b60-ae11-58ced13abd0e</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Why Type</ProviderName>
+  <ProviderName>Toxic Orca Studio</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Why Type"/>
   <Description DefaultValue="Create, organize, and search reusable email templates, then insert them into your message with one click or a keyword."/>
@@ -61,9 +61,6 @@
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
 
-          <!-- commands.html -> loads commands.ts -->
-          <FunctionFile resid="Commands.Url" />
-
           <ExtensionPoint xsi:type="MessageComposeCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="WhyType.Group">
@@ -86,23 +83,6 @@
                   </Action>
                 </Control>
 
-                <!-- Button 2: Runs ExecuteFunction ExpandWhyType (commands.ts) -->
-                <Control xsi:type="Button" id="WhyType.Expand">
-                  <Label resid="ExpandButton.Label"/>
-                  <Supertip>
-                    <Title resid="ExpandButton.Label"/>
-                    <Description resid="ExpandButton.Tooltip"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>ExpandWhyType</FunctionName>
-                  </Action>
-                </Control>
-
               </Group>
             </OfficeTab>
           </ExtensionPoint>
@@ -119,19 +99,16 @@
       </bt:Images>
 
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://toxicorca.github.io/why-type-site/commands.html"/>
         <bt:Url id="Taskpane.Url"  DefaultValue="https://toxicorca.github.io/why-type-site/taskpane.html"/>
       </bt:Urls>
 
       <bt:ShortStrings>
         <bt:String id="WhyTypeGroup.Label" DefaultValue="Why Type"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Open Why Type"/>
-        <bt:String id="ExpandButton.Label" DefaultValue="Expand Why Type"/>
       </bt:ShortStrings>
 
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Why Type quick text panel."/>
-        <bt:String id="ExpandButton.Tooltip" DefaultValue="Expand the selected keyword into a Why Type template."/>
       </bt:LongStrings>
     </Resources>
 
