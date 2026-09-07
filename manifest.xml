@@ -10,7 +10,7 @@
   <ProviderName>Toxic Orca Studio</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Why Type"/>
-  <Description DefaultValue="Create, organize, and search reusable email templates, then insert them into your message with one click or a keyword."/>
+  <Description DefaultValue="Create, organize, and search reusable email templates, then insert them into your message with one click."/>
   <IconUrl DefaultValue="https://toxicorca.github.io/why-type-site/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://toxicorca.github.io/why-type-site/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://toxicorca.github.io/why-type-site/support.html"/>
