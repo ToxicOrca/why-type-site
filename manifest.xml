@@ -15,9 +15,10 @@
   <HighResolutionIconUrl DefaultValue="https://toxicorca.github.io/why-type-site/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://toxicorca.github.io/why-type-site/support.html"/>
 
-  <AppDomains>
-    <AppDomain>https://toxicorca.github.io/why-type-site</AppDomain>
-  </AppDomains>
+  <!-- No AppDomains: every URL is on the add-in's own origin, which is
+       implicitly allowed. An AppDomain entry must be a bare domain with no
+       path, and the webpack dev->prod URL rewrite would inject a path here,
+       which fails Partner Center package validation. -->
 
   <Hosts>
     <Host Name="Mailbox"/>
